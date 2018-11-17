@@ -20980,11 +20980,11 @@ cr.plugins_.Touch = function(runtime)
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Dictionary,
 	cr.plugins_.Button,
-	cr.plugins_.NodeWebkit,
-	cr.plugins_.Multiplayer,
 	cr.plugins_.List,
-	cr.plugins_.Text,
+	cr.plugins_.Multiplayer,
+	cr.plugins_.NodeWebkit,
 	cr.plugins_.Touch,
+	cr.plugins_.Text,
 	cr.plugins_.Sprite,
 	cr.system_object.prototype.cnds.CompareVar,
 	cr.plugins_.Sprite.prototype.acts.SetAnimFrame,
@@ -21006,8 +21006,6 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.exps.str,
 	cr.system_object.prototype.exps.round,
 	cr.system_object.prototype.exps.random,
-	cr.plugins_.List.prototype.acts.AddItemAt,
-	cr.plugins_.Multiplayer.prototype.exps.MyID,
 	cr.plugins_.Multiplayer.prototype.cnds.OnSignallingJoinedRoom,
 	cr.plugins_.List.prototype.exps.SelectedIndex,
 	cr.plugins_.Text.prototype.acts.SetText,
@@ -21017,8 +21015,9 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.exps["int"],
 	cr.plugins_.Multiplayer.prototype.exps.Message,
 	cr.system_object.prototype.exps.newline,
-	cr.plugins_.Multiplayer.prototype.cnds.SignallingIsConnected,
+	cr.plugins_.Multiplayer.prototype.exps.MyID,
 	cr.plugins_.Multiplayer.prototype.cnds.OnAnyPeerMessage,
-	cr.plugins_.Dictionary.prototype.exps.Get,
-	cr.plugins_.Multiplayer.prototype.exps.Tag
+	cr.plugins_.Dictionary.prototype.cnds.HasKey,
+	cr.plugins_.Multiplayer.prototype.exps.Tag,
+	cr.plugins_.Dictionary.prototype.exps.Get
 ];};
